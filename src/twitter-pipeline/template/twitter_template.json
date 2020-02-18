@@ -3,8 +3,7 @@
   "settings": {
     "index": {
       "number_of_shards": 1,
-      "number_of_replicas": 0,
-      "mapper.dynamic": false
+      "number_of_replicas": 0
     },
     "analysis": {
       "analyzer": {
@@ -25,11 +24,7 @@
 
   },
   "mappings": {
-    "doc": {
       "dynamic": "false",
-      "_all": {
-        "enabled": false
-      },
       "properties": {
         "sentiment" : {
           "type": "keyword"
@@ -315,4 +310,3 @@
       }
     }
   }
-}
